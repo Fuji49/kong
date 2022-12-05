@@ -1,0 +1,7 @@
+http://host.docker.internal:8080/admin/fiware
+http://localhost:8080/admin/fiware
+
+http://host.docker.internal:8080/admin/home_menu
+http://host.docker.internal:8080/admin/fiware
+http://localhost:8080/admin/fiware
+http://host.docker.internal:8080/admin/fiware

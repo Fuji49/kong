@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>fiware</title>
+        <style>
+            @import url(http://host.docker.internal:8080/admin/static/css/bs_custamize.css);
+        </style>
+    </head>
+    <div class="text-center border-bottom">
+        <!--<h2 class="firure text mb-0">ユーザー管理</h2>-->
+        <p style="color:black;font-size:2.5rem;">FIWAREの登録情報</p>
+    </div>
+    <center>
+	    <table class="table table-bordered w-auto my-box">
+	      <th>
+		id
+	      </th>
+	      <th>
+		分類
+	      </th>
+	      <th>
+		名称
+	      </th>
+	      <th>
+		価格
+	      </th>
+	    {% for r in res %}
+	      <tr>
+		<td class="align-middle">
+		  {{r.id}}
+		</td>
+		<td class="align-middle">
+		  {{r.type}}
+		</td>
+		<td class="align-middle">
+		  {{r.name.value}}
+		</td>
+		<td  class="align-middle">
+		  {{r.price.value}}
+		</td>
+	    </tr>
+	    {% endfor %}
+	    </table>
+	  </center>
+</html>
