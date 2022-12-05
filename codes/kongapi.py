@@ -1,15 +1,5 @@
 #Kong redirect
-# SQLAlchemy はデータベース(DB)を object のように扱えるライブラリである。
-# 今回は DB との連結を担当する。
-# models.py の User クラスで、どのような object として扱うかを決める。
 from flask import Flask, render_template, request, url_for, redirect, jsonify
-#from sqlalchemy import create_engine, exc
-#from sqlalchemy.orm import sessionmaker
-#from models import User, Url
-#import hashlib
-#from datetime import datetime
-#from werkzeug import exceptions
-
 import requests
 import json
 import subprocess
